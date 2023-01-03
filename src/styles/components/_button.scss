@@ -1,0 +1,41 @@
+// Action Button
+.action-button {
+  background-color: $app-blue;
+  border: none;
+  border-bottom: 0.6rem solid darken($app-blue, 10%);
+  color: white;
+  font-size: $l-size;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: $m-size;
+  padding: 2.4rem;
+}
+
+.action-button:disabled {
+  opacity: 50%;
+}
+
+// Regular buttons
+.button {
+  background-color: $app-blue;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-bottom: 0.3rem solid darken($app-blue, 10%);
+  padding: $s-size;
+}
+
+.button--link {
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
+  min-width: fit-content;
+  margin-left: $s-size;
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  .action-button {
+    margin-bottom: $xl-size;
+  }
+}

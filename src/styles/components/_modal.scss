@@ -1,0 +1,38 @@
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  transition: opacity 200ms ease-in-out;
+  display: flex; // Allowing all items in the selector to be flexed
+  justify-content: center; // Centering modal horizontally
+  align-items: center; // Centering modal vertically
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.selectedOptionModal {
+  background: $light-blue;
+  color: white;
+  max-width: 30rem; // Wraps the content to the next line if the content is too long
+  padding: $l-size;
+  outline: none;
+  text-align: center;
+}
+
+.selectedOptionModal__title {
+ margin: 0 0 $l-size 0; // top, right, bottom, left
+}
+
+.selectedOptionModal__body {
+  margin: 0 0 $m-size 0; // top, right, bottom, left
+  font-size: 2rem;
+  font-weight: 300;
+  word-break: break-all;
+}

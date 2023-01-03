@@ -1,0 +1,5 @@
+.container {
+  max-width: 60rem;
+  margin: 0 auto; // Top and bottom 0, left and wright spaced equally depending on size of browser
+  padding: 0 $l-size;
+}
